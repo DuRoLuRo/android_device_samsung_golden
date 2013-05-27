@@ -32,26 +32,25 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
-# /
+# Prebuilts: /*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/root/init.rc:root/init.rc \
-    device/samsung/golden/prebuilt/root/default.prop:root/default.prop \
     device/samsung/golden/prebuilt/root/init.samsunggolden.rc:root/init.samsunggolden.rc \
     device/samsung/golden/prebuilt/root/init.samsunggolden.bt.rc:root/init.samsunggolden.bt.rc \
     device/samsung/golden/prebuilt/root/init.samsunggolden.usb.rc:root/init.samsunggolden.usb.rc \
     device/samsung/golden/prebuilt/root/fstab.samsunggolden:root/fstab.samsunggolden \
     device/samsung/golden/prebuilt/root/ueventd.samsunggolden.rc:root/ueventd.samsunggolden.rc
 
-# /lib/modules
+# Prebuilts: /lib/modules/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/root/lib/modules/j4fs.ko:root/lib/modules/j4fs.ko \
     device/samsung/golden/prebuilt/root/lib/modules/param.ko:root/lib/modules/param.ko
 
-# /system
+# Prebuilts: /system/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/omxloaders:system/omxloaders
 
-# /system/etc
+# Prebuilts: /system/etc/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/etc/asound.conf:system/etc/asound.conf \
     device/samsung/golden/prebuilt/system/etc/cspsa.conf:system/etc/cspsa.conf \
@@ -63,13 +62,13 @@ PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/etc/sirfgps.conf:system/etc/sirfgps.conf \
     device/samsung/golden/prebuilt/system/etc/vold.fstab:system/etc/vold.fstab
 
-# /system/etc/AT
+# Prebuilts: /system/etc/AT/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/etc/AT/manuf_id.cfg:system/etc/AT/manuf_id.cfg \
     device/samsung/golden/prebuilt/system/etc/AT/model_id.cfg:system/etc/AT/model_id.cfg \
     device/samsung/golden/prebuilt/system/etc/AT/system_id.cfg:system/etc/AT/system_id.cfg
 
-# /system/etc/permissions
+# Prebuilts: /system/etc/permissions/*
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
@@ -88,11 +87,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml
 
-# /system/etc/wifi
+# Prebuilts: /system/etc/wifi/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
-# /system/usr/keylayout
+# Prebuilts: /system/usr/keylayout/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
