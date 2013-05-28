@@ -329,20 +329,20 @@ service netd /system/bin/netd
     socket dnsproxyd stream 0660 root inet
     socket mdns stream 0660 root system
 
-service media /system/bin/logwrapper /system/bin/mediaserver
+service media /system/bin/mediaserver
     class main
     user media
     group system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc sdcard_rw sdcard_r
     ioprio rt 4
 
-service dbus /system/bin/logwrapper /system/bin/dbus-daemon --system --nofork
+service dbus /system/bin/dbus-daemon --system --nofork
     class main
     socket dbus stream 660 bluetooth bluetooth
     socket dbus_ste stream 660 bluetooth dbus_access
     user bluetooth
     group bluetooth net_bt_admin dbus_access
 
-service bluetoothd /system/bin/logwrapper /system/bin/bluetoothd -n -d
+service bluetoothd /system/bin/bluetoothd -n -d
     class main
     socket bluetooth stream 660 bluetooth bluetooth
     socket dbus_bluetooth stream 660 bluetooth bluetooth
@@ -352,7 +352,7 @@ service bluetoothd /system/bin/logwrapper /system/bin/bluetoothd -n -d
 service sdcard /system/bin/sdcard /data/media 1023 1023
      class late_start
 
-service cspsa /system/bin/logwrapper /system/bin/cspsa-server
+service cspsa /system/bin/cspsa-server
     class parameter_storage
     user root
     oneshot
@@ -374,14 +374,14 @@ service modem_log_relay /system/bin/modem_log_relay --ctrl_port=2001 --data_port
     class modem
     user root
 
-service admsrv /system/bin/logwrapper /system/bin/admsrv
+service admsrv /system/bin/admsrv
     class main
     user root
     group system audio inet net_bt net_bt_admin net_raw shell log
     ioprio rt 4
     capability NET_ADMIN NET_RAW SYS_NICE
 
-service stedump /system/bin/logwrapper /system/bin/stedump
+service stedump /system/bin/stedump
     class main
     user root
 

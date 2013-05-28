@@ -435,7 +435,7 @@ service bootanim /system/bin/bootanimation
     disabled
     oneshot
 
-service btld /system/bin/logwrapper /system/bin/btld -hb 921600 -hp /dev/ttyS2 -lpm 0 -nice -7
+service btld /system/bin/btld -hb 921600 -hp /dev/ttyS2 -lpm 0 -nice -7
     user root
     group bluetooth net_bt_admin
     disabled
