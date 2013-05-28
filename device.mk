@@ -25,9 +25,13 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-# Packages
+# Open-source HALs
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    lights.montblanc
+
+# Misc packages
+PRODUCT_PACKAGES += \
     macloader \
     make_ext4fs \
     setup_fs
