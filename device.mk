@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
 # Prebuilts: /system/etc/*
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/system/etc/asound.conf:system/etc/asound.conf \
+    device/samsung/golden/prebuilt/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/samsung/golden/prebuilt/system/etc/cspsa.conf:system/etc/cspsa.conf \
     device/samsung/golden/prebuilt/system/etc/dbus.conf:system/etc/dbus.conf \
     device/samsung/golden/prebuilt/system/etc/gps.conf:system/etc/gps.conf \
