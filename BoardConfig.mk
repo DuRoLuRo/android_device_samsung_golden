@@ -62,9 +62,6 @@ USE_OPENGL_RENDERER := true
 BOARD_EGL_CFG := device/samsung/golden/prebuilt/system/lib/egl/egl.cfg
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=50
 
-# OMX
-BOARD_USES_PROPRIETARY_OMX := SAMSUNG
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
