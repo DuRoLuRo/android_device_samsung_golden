@@ -95,7 +95,7 @@ static int set_light_buttons(struct light_device_t* dev, struct light_state_t co
     return err;
 }
 
-/** Close the lights device */
+/** Close the lights device **/
 static int close_lights(struct light_device_t *dev)
 {
 	if (dev)
@@ -103,7 +103,7 @@ static int close_lights(struct light_device_t *dev)
 	return 0;
 }
 
-/** Open a new instance of a lights device using name */
+/** Open a new instance of a lights device using name **/
 static int open_lights(const struct hw_module_t *module, char const *name, struct hw_device_t **device)
 {
 	pthread_t lighting_poll_thread;
