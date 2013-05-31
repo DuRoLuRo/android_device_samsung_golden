@@ -61,7 +61,6 @@ BOARD_FORCE_RAMDISK_ADDRESS := 0x02000000
 # Graphics
 USE_OPENGL_RENDERER := true
 BOARD_EGL_CFG := device/samsung/golden/prebuilt/system/lib/egl/egl.cfg
-COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60
 ENABLE_WEBGL := true
 
 # Bluetooth
