@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013 The Android Open Source Project
+# Copyright (C) 2013 www.maclaw.pl MaclawStudio
 # Copyright (C) 2013 Óliver García Albertos (oliverarafo@gmail.com)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
